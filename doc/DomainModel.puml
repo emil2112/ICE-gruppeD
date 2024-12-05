@@ -12,19 +12,19 @@ object ExerciseCreator
 object Settings
 object TextUI
 
-Application --* Database
-Application --* Menu
-Application --* User
+Application *-- Database
+Application *-- Menu
+Application *-- User
 
-Menu --* WorkoutProgram
-Menu --* Settings
-Menu --* Calendar
-Menu --* Workout
-Menu --* Stats
+Menu *-- WorkoutProgram
+Menu *-- Settings
+Menu *-- Calendar
+Menu *-- Workout
+Menu *-- Stats
 
-Workout --* WorkoutProgram
+Workout *-- WorkoutProgram
 
-WorkoutProgram --* Exercise
-WorkoutProgram --* ExerciseCreator
+WorkoutProgram *-- Exercise
+WorkoutProgram *-- ExerciseCreator
 
 @enduml
