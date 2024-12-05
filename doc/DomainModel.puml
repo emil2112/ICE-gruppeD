@@ -1,0 +1,24 @@
+@startuml
+object Application
+object Menu
+object Database
+object Calendar
+object Workout
+object Stats
+object User
+object Planner
+object Excercises
+object Settings
+object TextUI
+
+Application --* Database
+Application --* Menu
+Application --* User
+
+Menu --* Planner
+Menu --* Settings
+Menu --* Calendar
+Menu --* Workout
+Menu --* Stats
+
+@enduml
